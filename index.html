@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Athrav Gawali — Software Developer</title>
+
+<link rel="icon" type="image/png" href="icon.png">
+<title>Atharv Gavali — Software Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
@@ -36,9 +39,9 @@ html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:var(--a) transp
 body{font-family:var(--fh);background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .35s,color .35s}
 
 /* CURSOR */
-.cur{width:10px;height:10px;background:var(--a);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;transition:width .2s,height .2s}
+/* .cur{width:10px;height:10px;background:var(--a);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;transition:width .2s,height .2s}
 .cur-r{width:36px;height:36px;border:1px solid var(--a);opacity:.5;border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:transform .15s}
-
+*/
 /* NAV */
 nav{position:fixed;inset:0 0 auto 0;z-index:500;padding:1.1rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(6,9,16,.78);backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--border);transition:background .35s}
 [data-theme="light"] nav{background:rgba(245,247,252,.85)}
@@ -97,7 +100,7 @@ nav{position:fixed;inset:0 0 auto 0;z-index:500;padding:1.1rem 3rem;display:flex
 .ag{position:absolute;inset:-30px;border-radius:50%;background:conic-gradient(var(--a),var(--a2),var(--a4),var(--a));animation:spin 6s linear infinite;filter:blur(1px);opacity:.4}
 .ag2{position:absolute;inset:-50px;border-radius:50%;border:1px solid rgba(0,212,170,.15);animation:spin 12s linear infinite reverse}
 .ai{position:absolute;inset:4px;border-radius:50%;background:var(--bg3);border:2px solid rgba(0,212,170,.2);overflow:hidden;display:flex;align-items:center;justify-content:center;z-index:1}
-.aph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;background:radial-gradient(circle at 40% 40%,var(--bg4),var(--bg2))}
+.aph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.0rem;background:radial-gradient(circle at 40% 40%,var(--bg4),var(--bg2))}
 .aph i{font-size:6rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .aph span{font-family:var(--fm);font-size:.75rem;color:var(--t3)}
 
@@ -197,7 +200,8 @@ nav{position:fixed;inset:0 0 auto 0;z-index:500;padding:1.1rem 3rem;display:flex
 .soc:hover{transform:translateX(8px);box-shadow:var(--glow)}
 .soc.gh:hover{border-color:#6e7681;background:rgba(110,118,129,.1)}
 .soc.li:hover{border-color:#0a66c2;background:rgba(10,102,194,.1)}
-.soc.em:hover{border-color:var(--a);background:rgba(0,212,170,.07)}
+.soc.em:hover{border-color:#EA4335;background:rgba(234, 67, 53, 0.08);}
+.soc.wa:hover{border-color:#25D366;background:rgba(37, 211, 102, 0.08);}
 .sico{width:38px;height:38px;border-radius:9px;background:var(--bg4);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1rem}
 .sinf strong{display:block;font-size:.9rem;font-weight:600}
 .sinf span{font-size:.78rem;color:var(--t3);font-family:var(--fm)}
@@ -270,6 +274,7 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
   </div>
 </nav>
 
+
 <div class="mob" id="mob">
   <a href="#hero" onclick="closeMenu()">Home</a>
   <a href="#about" onclick="closeMenu()">About</a>
@@ -292,7 +297,7 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
         <span class="bdg bdg-t"><span class="dot"></span>Open to opportunities</span>
         <span class="bdg bdg-l"><i class="fas fa-location-dot"></i>India</span>
       </div>
-      <h1>Hi, I'm<br><span class="gname">Athrav Gawali</span></h1>
+      <h1>Hi, I'm<br><span class="gname">Atharv Gavali</span></h1>
       <div class="tline"><span id="typed"></span><span id="tcur"></span></div>
       <p class="hsub">Building <em>smart web solutions</em> with creativity and logic — one line of code at a time.</p>
       <div class="ctarow">
@@ -300,7 +305,7 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
         <a href="#contact" class="btn btn-o"><i class="fas fa-paper-plane"></i>Contact Me</a>
       </div>
       <div class="stats">
-        <div class="si"><div class="sn">5+</div><div class="sl">Projects</div></div>
+        <div class="si"><div class="sn">9+</div><div class="sl">Projects</div></div>
         <div class="si"><div class="sn">10+</div><div class="sl">Skills</div></div>
         <div class="si"><div class="sn">Java</div><div class="sl">Backend</div></div>
         <div class="si"><div class="sn">∞</div><div class="sl">Drive</div></div>
@@ -312,7 +317,7 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
         <div class="ag2"></div>
         <div class="ai">
           <div class="aph">
-          <img src="C:\Users\Asus\Downloads\me.jpeg" alt="Athrav Gawali" class="profile-img"><span>Athrav Gawali</span>
+          <img src="C:\Users\Asus\Desktop\Portfolio\me.jpeg" alt="Athrav Gawali" class="profile-img"><span>Atharv Gavali</span>
         </div>
         </div>
         <div class="atag">Diploma IT · Aspiring Dev</div>
@@ -331,7 +336,7 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
     </div>
     <div class="agrid">
       <div class="acopy rv d1">
-        <p>I'm <strong>Athrav Gawali</strong>, a passionate <strong>Diploma IT student</strong> from India with a deep interest in building real-world software. My journey began with curious tinkering and evolved into a focused pursuit of software development.</p>
+        <p>I'm <strong>Atharv Gavali</strong>, a passionate <strong>Diploma IT student</strong> from India with a deep interest in building real-world software. My journey began with curious tinkering and evolved into a focused pursuit of software development.</p>
         <p>My core focus lies in <strong>Web Development</strong> and <strong>Java-based backend systems</strong>. I've worked with <strong>Java Servlets, JSP, and Eclipse IDE</strong> to craft full-stack applications that go beyond the front end.</p>
         <p>I believe great software is equal parts <strong>logic and craftsmanship</strong> — clean architecture on the inside, polished experience on the outside.</p>
         <blockquote>"Every complex system starts with a simple idea and a lot of discipline."</blockquote>
@@ -400,6 +405,15 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
       <div class="rule"></div>
     </div>
     <div class="pgrid">
+
+      <div class="pc rv">
+        <div class="pc-acc"></div>
+        <div class="phead"><div class="pico">🌆</div><div class="pacts"><a href="https://github.com/Atharv7138" target="_blank" class="pact"><i class="fab fa-github"></i></a><a href="#" class="pact"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+        <div class="ptitle">Urban Sync</div><div class="prole">Real Time Public transport Tracking And Crowd Monitoring System</div>
+        <div class="pdesc">An integrated smart city platform designed to streamline urban services and communication. It connects citizens with municipal authorities for reporting issues, tracking services, and improving city infrastructure efficiency in real-time.</div>
+        <div class="pstack"><span class="tag">Java</span><span class="tag">Servlets</span><span class="tag">JSP</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span></div>
+      </div>
+
       <div class="pc rv">
         <div class="pc-acc"></div>
         <div class="phead"><div class="pico">🗣️</div><div class="pacts"><a href="https://github.com/Atharv7138" target="_blank" class="pact"><i class="fab fa-github"></i></a><a href="#" class="pact"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
@@ -407,12 +421,37 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
         <div class="pdesc">Role-based civic complaint system with three user levels — Admin, Citizen, and Officer. Citizens register complaints, officers manage resolutions, and admins oversee the entire workflow.</div>
         <div class="pstack"><span class="tag">Java</span><span class="tag">Servlets</span><span class="tag">JSP</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span></div>
       </div>
+
+      <div class="pc rv">
+        <div class="pc-acc"></div>
+        <div class="phead"><div class="pico">🏦</div><div class="pacts"><a href="https://github.com/Atharv7138" target="_blank" class="pact"><i class="fab fa-github"></i></a><a href="#" class="pact"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+        <div class="ptitle">Bank Management System</div><div class="prole">Financial Operations System</div>
+        <div class="pdesc">A secure banking application that allows users to manage accounts, perform transactions, check balances, and view transaction history. Includes admin control for managing users and monitoring financial activities.</div>
+        <div class="pstack"><span class="tag">Java</span><span class="tag">Servlets</span><span class="tag">JSP</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span></div>
+      </div>
+
+      <div class="pc rv">
+        <div class="pc-acc"></div>
+        <div class="phead"><div class="pico">⏰</div><div class="pacts"><a href="https://github.com/Atharv7138" target="_blank" class="pact"><i class="fab fa-github"></i></a><a href="#" class="pact"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+        <div class="ptitle">Reminder Application</div><div class="prole">Task & Notification Manager</div>
+        <div class="pdesc">A user-friendly application designed to set, manage, and track reminders for daily tasks and events. Features timely notifications, task prioritization, and an intuitive interface to improve productivity and time management.</div>
+        <div class="pstack"><span class="tag">Java</span><span class="tag">Servlets</span><span class="tag">JSP</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span></div>
+      </div>
+
+      <div class="pc rv">
+        <div class="pc-acc"></div>
+        <div class="phead"><div class="pico">⚡</div><div class="pacts"><a href="https://github.com/Atharv7138" target="_blank" class="pact"><i class="fab fa-github"></i></a><a href="#" class="pact"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+        <div class="ptitle">EV Charging Station Finder</div><div class="prole">Electric Vehicle Support System</div>
+        <div class="pdesc">A smart application that helps users locate nearby electric vehicle charging stations with ease. Provides real-time availability, navigation support, and station details to promote efficient and eco-friendly transportation.</div>
+        <div class="pstack"><span class="tag">Java</span><span class="tag">Servlets</span><span class="tag">JSP</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span></div>
+      </div>
+
       <div class="pc rv d1">
         <div class="pc-acc"></div>
         <div class="phead"><div class="pico">📝</div><div class="pacts"><a href="https://github.com/Atharv7138" target="_blank" class="pact"><i class="fab fa-github"></i></a><a href="" class="pact"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
         <div class="ptitle">MCQ Exam Website</div><div class="prole">Online Examination System</div>
         <div class="pdesc">Fully interactive exam platform with timed tests, instant scoring, detailed result analysis, and a wrong-answer review system to help students identify and fix knowledge gaps.</div>
-        <div class="pstack"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">JSP</span><span class="tag">Servlets</span></div>
+        <div class="pstack"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
       </div>
       <div class="pc rv d2">
         <div class="pc-acc"></div>
@@ -458,7 +497,7 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
       <div class="rule"></div>
     </div>
     <div class="expg">
-      <div class="ec rv"><div class="ep">2023 — Present</div><div class="et">Diploma in Information Technology</div><div class="eo">Polytechnic Institute · India</div><ul class="el"><li>Studying core CS fundamentals — data structures, algorithms, databases</li><li>Hands-on full-stack development with Java technologies</li><li>Built 5+ real-world projects applying classroom learning to practice</li><li>Active use of Eclipse IDE, Git, and agile workflows</li></ul></div>
+      <div class="ec rv"><div class="ep">2023 — Present</div><div class="et">Diploma in Information Technology</div><div class="eo">R.S.M. Polytechnic Nashik · India</div><ul class="el"><li>Studying core IT fundamentals — data structures, algorithms, databases</li><li>Hands-on full-stack development with Java technologies</li><li>Built 5+ real-world projects applying classroom learning to practice</li><li>Active use of Eclipse IDE, Git, and agile workflows</li></ul></div>
       <div class="ec rv d1"><div class="ep">Ongoing</div><div class="et">Java Web Development</div><div class="eo">Self-Learning & Project Work</div><ul class="el"><li>Built MVC-based web apps using Java Servlets & JSP</li><li>Integrated MySQL databases with backend Java code</li><li>Implemented role-based access control (CivicVoice project)</li><li>Practised clean code patterns and component reuse</li></ul></div>
       <div class="ec rv d2"><div class="ep">Ongoing</div><div class="et">Frontend Engineering</div><div class="eo">Self-Learning · freeCodeCamp · YouTube</div><ul class="el"><li>Mastered HTML5 semantics, CSS3 animations, and layouts</li><li>Built JS-heavy projects (MCQ system, Expense Tracker)</li><li>Learning React — components, state management, hooks</li><li>Practising UI/UX and responsive design principles</li></ul></div>
       <div class="ec rv d3"><div class="ep">2024 — Present</div><div class="et">Open Source & GitHub</div><div class="eo">@Atharv7138 on GitHub</div><ul class="el"><li>Maintaining personal project repositories publicly</li><li>Documenting code for readability and reusability</li><li>Exploring collaboration workflows and code reviews</li><li>Building a portfolio of projects to showcase skills</li></ul></div>
@@ -479,9 +518,9 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
         <p class="hsub" style="margin-bottom:1.8rem;font-size:1.1rem">I'm actively looking for exciting opportunities. Whether you have a project, a question, or just want to say hi — I'd love to hear from you.</p>
         <div class="socl">
           <a href="https://github.com/Atharv7138" target="_blank" class="soc gh"><div class="sico"><i class="fab fa-github"></i></div><div class="sinf"><strong>GitHub</strong><span>github.com/Atharv7138</span></div><i class="fas fa-arrow-right sarr"></i></a>
-          <a href="https://www.linkedin.com/in/athrav-gawali-901963377" target="_blank" class="soc li"><div class="sico"><i class="fab fa-linkedin"></i></div><div class="sinf"><strong>LinkedIn</strong><span>athrav-gawali-8010815568</span></div><i class="fas fa-arrow-right sarr"></i></a>
+          <a href="https://www.linkedin.com/in/athrav-gawali-901963377" target="_blank" class="soc li"><div class="sico"><i class="fab fa-linkedin"></i></div><div class="sinf"><strong>LinkedIn</strong><span>Atharv-Gavali</span></div><i class="fas fa-arrow-right sarr"></i></a>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gawaliathrav@gmail.com" target="_blank" class="soc em"><div class="sico"><i class="fas fa-envelope"></i></div><div class="sinf"><strong>Email</strong><span>gawaliathrav@gmail.com</span></div><i class="fas fa-arrow-right sarr"></i></a></div>
-          <a href="https://wa.me/918010815568" target="_blank" class="soc em"><div class="sico"><i class="fab fa-whatsapp"></i></div><div class="sinf"><strong>Whatsapp</strong><span>+91 8010815568</span></div><i class="fas fa-arrow-right sarr"></i></a></div>          
+          <a href="https://wa.me/918010815568" target="_blank" class="soc wa"><div class="sico"><i class="fab fa-whatsapp"></i></div><div class="sinf"><strong>Whatsapp</strong><span>+91 8010815568</span></div><i class="fas fa-arrow-right sarr"></i></a></div>          
       <div class="cf rv d1">
         <h3>Send a Message ✉️</h3>
         <div class="frow">
@@ -507,10 +546,10 @@ footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fil
 
 <script>
 // CURSOR
-const c=document.getElementById('c'),cr=document.getElementById('cr');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;c.style.left=mx+'px';c.style.top=my+'px'});
-setInterval(()=>{rx+=(mx-rx)*.15;ry+=(my-ry)*.15;cr.style.left=rx+'px';cr.style.top=ry+'px'},16);
+//const c=document.getElementById('c'),cr=document.getElementById('cr');
+//let mx=0,my=0,rx=0,ry=0;
+//document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;c.style.left=mx+'px';c.style.top=my+'px'});
+//setInterval(()=>{rx+=(mx-rx)*.15;ry+=(my-ry)*.15;cr.style.left=rx+'px';cr.style.top=ry+'px'},16);
 
 // TYPING
 const phrases=["Software Developer","Java & Web Developer","Problem Solver","Full-Stack Learner"];
